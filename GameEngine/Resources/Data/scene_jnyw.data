@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene name="jnyw" id="2">
+  <foreGround>./Resources/ForeGround/jxk.jpg</foreGround>
+  <map width="2560" height="1920">
+    <bottom>./Resources/Map/Jnyw/jnyw1.jpg</bottom>
+    <top>./Resources/Map/Jnyw/jnyw2.png</top>
+    <grid></grid>
+  </map>
+  <character>
+    <npcList>
+      <npc NpcId="1" id="1"></npc>
+      <npc NpcId="10" id="2"></npc>
+      <npc NpcId="1" id="3"></npc>
+    </npcList>
+    <monsterList>
+    </monsterList>
+  </character>
+</scene>

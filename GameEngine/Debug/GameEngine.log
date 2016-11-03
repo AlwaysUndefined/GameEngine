@@ -1,0 +1,178 @@
+﻿生成启动时间为 2016/11/2 14:29:46。
+     1>项目“E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\GameEngine.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VisualStudio2015\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /analyze- /errorReport:prompt /clr:nostdlib Engine\Engine.cpp Engine\EventManager.cpp Engine\Game.cpp Engine\GameObject.cpp Engine\GUI.cpp Engine\Scene.cpp main.cpp Engine\Observers.cpp
+         Engine.cpp
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): error C2011: “GameEngine::Button”:“class”类型重定义
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+         EventManager.cpp
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): error C2011: “GameEngine::Button”:“class”类型重定义
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+         Game.cpp
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): error C2011: “GameEngine::Button”:“class”类型重定义
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(47): error C2027: 使用了未定义类型“GameEngine::Button”
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(47): error C2227: “->delegate”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(48): error C2027: 使用了未定义类型“GameEngine::Button”
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(48): error C2227: “->delegate”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(48): error C2227: “->Add”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(49): error C2664: “int GameEngine::EventManager::AddObserver(GameEngine::Observer<GameEngine::Game> *,GameEngine::EventType)”: 无法将参数 1 从“GameEngine::Button *”转换为“GameEngine::Observer<GameEngine::Game> *”
+         Engine\Game.cpp(49): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+     1>Engine\Game.cpp(122): error C2027: 使用了未定义类型“GameEngine::Button”
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(122): error C2227: “->buttonTexture2D”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(122): error C2227: “->texture”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(123): error C2027: 使用了未定义类型“GameEngine::Button”
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(123): error C2227: “->buttonTexture2D”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(123): error C2227: “->pRect”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(124): error C2027: 使用了未定义类型“GameEngine::Button”
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(124): error C2227: “->buttonTexture2D”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(124): error C2227: “->pCenter”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(125): error C2027: 使用了未定义类型“GameEngine::Button”
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(125): error C2227: “->buttonTexture2D”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(125): error C2227: “->pPosition”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(126): error C2027: 使用了未定义类型“GameEngine::Button”
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>Engine\Game.cpp(126): error C2227: “->buttonTexture2D”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(126): error C2227: “->color”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\Game.cpp(126): error C2660: “ID3DXSprite::Draw”: 函数不接受 1 个参数
+         GameObject.cpp
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>Engine\GameObject.cpp(54): error C2572: “GameEngine::Texture2D::Transform”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(47): note: 参见“GameEngine::Texture2D::Transform”的声明
+     1>Engine\GameObject.cpp(74): error C2572: “GameEngine::Animation::Animation”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(83): note: 参见“GameEngine::Animation::Animation”的声明
+     1>Engine\GameObject.cpp(132): error C2572: “GameEngine::Character::SetCenter”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(102): note: 参见“GameEngine::Character::SetCenter”的声明
+     1>Engine\GameObject.cpp(132): error C2572: “GameEngine::Character::SetCenter”: 重定义默认参数 : 参数 2
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(102): note: 参见“GameEngine::Character::SetCenter”的声明
+     1>Engine\GameObject.cpp(133): warning C4244: “=”: 从“long”转换到“float”，可能丢失数据
+     1>Engine\GameObject.cpp(134): warning C4244: “=”: 从“long”转换到“float”，可能丢失数据
+     1>Engine\GameObject.cpp(159): error C2572: “GameEngine::Player::SetAnimationFace”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(117): note: 参见“GameEngine::Player::SetAnimationFace”的声明
+     1>Engine\GameObject.cpp(179): warning C4018: “<”: 有符号/无符号不匹配
+     1>Engine\GameObject.cpp(224): error C2572: “GameEngine::Player::SetCenter”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(131): note: 参见“GameEngine::Player::SetCenter”的声明
+     1>Engine\GameObject.cpp(224): error C2572: “GameEngine::Player::SetCenter”: 重定义默认参数 : 参数 2
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(131): note: 参见“GameEngine::Player::SetCenter”的声明
+     1>Engine\GameObject.cpp(225): warning C4244: “=”: 从“long”转换到“float”，可能丢失数据
+     1>Engine\GameObject.cpp(226): warning C4244: “=”: 从“long”转换到“float”，可能丢失数据
+     1>Engine\GameObject.cpp(230): error C2572: “GameEngine::Player::SetPosition”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(133): note: 参见“GameEngine::Player::SetPosition”的声明
+     1>Engine\GameObject.cpp(230): error C2572: “GameEngine::Player::SetPosition”: 重定义默认参数 : 参数 2
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(133): note: 参见“GameEngine::Player::SetPosition”的声明
+     1>Engine\GameObject.cpp(231): warning C4244: “=”: 从“long”转换到“float”，可能丢失数据
+     1>Engine\GameObject.cpp(232): warning C4244: “=”: 从“long”转换到“float”，可能丢失数据
+         GUI.cpp
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): error C2065: “Game”: 未声明的标识符
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): error C2923: “GameEngine::Observer”: 对于参数“T”，“Game”不是有效的 模板 类型变量
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(17): error C2955: “GameEngine::Observer”: 使用 类 模板 需要 模板 参数列表
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\Observers.h(23): note: 参见“GameEngine::Observer”的声明
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(19): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(19): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(19): error C2238: 意外的标记位于“;”之前
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(28): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(28): error C2238: 意外的标记位于“;”之前
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(32): error C2065: “Texture2D”: 未声明的标识符
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(32): error C2059: 语法错误:“>”
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(32): error C2976: “std::vector”: 模板 参数太少
+         D:\VisualStudio2015\VC\include\vector(678): note: 参见“std::vector”的声明
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(34): error C2061: 语法错误: 标识符“DX9Device”
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(38): error C2061: 语法错误: 标识符“Texture2D”
+     1>Engine\GUI.cpp(14): error C2039: “rect”: 不是“GameEngine::Button”的成员
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): note: 参见“GameEngine::Button”的声明
+     1>Engine\GUI.cpp(15): error C2065: “buttonTexture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(15): error C2061: 语法错误: 标识符“Texture2D”
+     1>Engine\GUI.cpp(18): error C2065: “DX9Device”: 未声明的标识符
+     1>Engine\GUI.cpp(18): error C2065: “device”: 未声明的标识符
+     1>Engine\GUI.cpp(18): error C2761: “{ctor}”: 不允许成员函数重新声明
+     1>Engine\GUI.cpp(19): error C2448: “GameEngine::GUI::{ctor}”: 函数样式初始值设定项类似函数定义
+     1>Engine\GUI.cpp(25): error C2572: “GameEngine::GUI::AddLabel”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(35): note: 参见“GameEngine::GUI::AddLabel”的声明
+     1>Engine\GUI.cpp(25): error C2572: “GameEngine::GUI::AddLabel”: 重定义默认参数 : 参数 2
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(35): note: 参见“GameEngine::GUI::AddLabel”的声明
+     1>Engine\GUI.cpp(25): error C2572: “GameEngine::GUI::AddLabel”: 重定义默认参数 : 参数 3
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(35): note: 参见“GameEngine::GUI::AddLabel”的声明
+     1>Engine\GUI.cpp(25): error C2572: “GameEngine::GUI::AddLabel”: 重定义默认参数 : 参数 4
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(35): note: 参见“GameEngine::GUI::AddLabel”的声明
+     1>Engine\GUI.cpp(25): error C2572: “GameEngine::GUI::AddLabel”: 重定义默认参数 : 参数 5
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(35): note: 参见“GameEngine::GUI::AddLabel”的声明
+     1>Engine\GUI.cpp(25): error C2572: “GameEngine::GUI::AddLabel”: 重定义默认参数 : 参数 6
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(35): note: 参见“GameEngine::GUI::AddLabel”的声明
+     1>Engine\GUI.cpp(34): error C2065: “Texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(34): error C2065: “t2d”: 未声明的标识符
+     1>Engine\GUI.cpp(34): error C2761: “AddTexture2D”: 不允许成员函数重新声明
+     1>Engine\GUI.cpp(35): error C2448: “GameEngine::GUI::AddTexture2D”: 函数样式初始值设定项类似函数定义
+     1>Engine\GUI.cpp(44): error C2572: “GameEngine::GUI::AddTexture2D”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(39): note: 参见“GameEngine::GUI::AddTexture2D”的声明
+     1>Engine\GUI.cpp(44): error C2572: “GameEngine::GUI::AddTexture2D”: 重定义默认参数 : 参数 2
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(39): note: 参见“GameEngine::GUI::AddTexture2D”的声明
+     1>Engine\GUI.cpp(44): error C2572: “GameEngine::GUI::AddTexture2D”: 重定义默认参数 : 参数 3
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(39): note: 参见“GameEngine::GUI::AddTexture2D”的声明
+     1>Engine\GUI.cpp(45): error C2065: “Texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(45): error C2065: “texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(45): error C2061: 语法错误: 标识符“Texture2D”
+     1>Engine\GUI.cpp(46): error C2065: “texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(46): error C2227: “->texture”的左边必须指向类/结构/联合/泛型类型
+         Engine\GUI.cpp(46): note: 类型是“unknown-type”
+     1>Engine\GUI.cpp(47): error C2065: “texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(47): error C2227: “->pRect”的左边必须指向类/结构/联合/泛型类型
+         Engine\GUI.cpp(47): note: 类型是“unknown-type”
+     1>Engine\GUI.cpp(48): error C2065: “texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(48): error C2227: “->pCenter”的左边必须指向类/结构/联合/泛型类型
+         Engine\GUI.cpp(48): note: 类型是“unknown-type”
+     1>Engine\GUI.cpp(49): error C2065: “texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(49): error C2227: “->pPosition”的左边必须指向类/结构/联合/泛型类型
+         Engine\GUI.cpp(49): note: 类型是“unknown-type”
+     1>Engine\GUI.cpp(50): error C2065: “texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(50): error C2227: “->color”的左边必须指向类/结构/联合/泛型类型
+         Engine\GUI.cpp(50): note: 类型是“unknown-type”
+     1>Engine\GUI.cpp(51): error C2065: “texture2D”: 未声明的标识符
+     1>Engine\GUI.cpp(58): error C2065: “dx9Device”: 未声明的标识符
+     1>Engine\GUI.cpp(58): error C2227: “->CreateTexture”的左边必须指向类/结构/联合/泛型类型
+         Engine\GUI.cpp(58): note: 类型是“unknown-type”
+     1>Engine\GUI.cpp(58): error C2039: “buttonTexture2D”: 不是“GameEngine::Button”的成员
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): note: 参见“GameEngine::Button”的声明
+     1>Engine\GUI.cpp(58): error C2227: “->texture”的左边必须指向类/结构/联合/泛型类型
+     1>Engine\GUI.cpp(59): error C2039: “buttonTexture2D”: 不是“GameEngine::Button”的成员
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): note: 参见“GameEngine::Button”的声明
+     1>Engine\GUI.cpp(59): error C2227: “->pPosition”的左边必须指向类/结构/联合/泛型类型
+         Scene.cpp
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>Engine\Scene.cpp(15): error C2572: “GameEngine::Scene::SceneInit”: 重定义默认参数 : 参数 1
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\Scene.h(41): note: 参见“GameEngine::Scene::SceneInit”的声明
+     1>Engine\Scene.cpp(15): error C2572: “GameEngine::Scene::SceneInit”: 重定义默认参数 : 参数 2
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\Scene.h(41): note: 参见“GameEngine::Scene::SceneInit”的声明
+     1>Engine\Scene.cpp(140): warning C4244: “参数”: 从“float”转换到“long”，可能丢失数据
+         main.cpp
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\API\rapidjson\document.h(958): warning C4003: “max”宏的实参不足
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\API\rapidjson\document.h(964): warning C4003: “min”宏的实参不足
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\API\rapidjson\document.h(965): warning C4003: “max”宏的实参不足
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\API\rapidjson\document.h(982): warning C4003: “max”宏的实参不足
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\API\rapidjson\document.h(983): warning C4003: “max”宏的实参不足
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GUI.h(16): error C2011: “GameEngine::Button”:“class”类型重定义
+         E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\Engine\GameObject.h(50): note: 参见“GameEngine::Button”的声明
+     1>main.cpp(63): error C2660: “GameEngine::Engine::SetClientSize”: 函数不接受 0 个参数
+         Observers.cpp
+         D:\DirectXSDK\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>Engine\Observers.cpp(11): warning C4346: “GameEngine::Delegate<T>::EventInvoke”: 依赖名称不是类型
+         Engine\Observers.cpp(11): note: 用“typename”为前缀来表示类型
+     1>Engine\Observers.cpp(11): error C2146: 语法错误: 缺少“)”(在标识符“fuc”的前面)
+     1>Engine\Observers.cpp(15): error C2649: “typename”: 不是“class”
+         正在生成代码...
+     1>已完成生成项目“E:\Haibara\Documents\Visual Studio 2015\Projects\GameEngine\GameEngine\GameEngine.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:07.37
