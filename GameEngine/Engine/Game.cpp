@@ -2,21 +2,15 @@
 #include <EventManager.h>
 namespace GameEngine
 {
-	Game::Game(HWND hwnd, HINSTANCE hInstance, DX9Device* dx9Device, DXInput* dxInput, EventManager* eventManager)
+	Game::Game(DX9Device* dx9Device, EventManager* eventManager)
 	{
-		Game::hwnd = hwnd;
-		Game::hInstance = hInstance;
-		Game::dx9Device = dx9Device;
-		Game::dxInput = dxInput;
 		Game::eventManager = eventManager;
-		Game::dxDevice = dx9Device->dxDevice;
-		Game::dxSprite = dx9Device->dxSprite;
-		Game::dxFont = dx9Device->dxFont;
+		Game::dx9Device = dx9Device;
 	}
 	//窗体绘制前调用初始化函数。加载资源
-	int Game::Init(Game* mySelf)
+	int Game::Init(Game* me)
 	{
-		Game::me = mySelf;
+		Game::me = me;
 		//GUI管理
 		Gui = new GUI(dx9Device);
 		//场景
@@ -40,13 +34,6 @@ namespace GameEngine
 	{
 		Texture2D* main = new Texture2D();
 		dx9Device->CreateTexture(L"./Resources/UI/main.png", Size(800, 600), &main->texture);
-		//Gui->AddTexture2D(main);
-		Gui->AddLabel(ByteToChar(dxInput->mouseState.rgbButtons));
-		//添加按钮
-		Button* button1 = Gui->AddButton(D3DXVECTOR3(100, 100, 0), GetRECT(100, 100, 132, 132), L"./Resources/UI/scene_menu/goods.png");
-		button1->delegate = new Delegate<Game>(me);
-		button1->delegate->Add(&Game::GoodsButtonEventHandler);
-		eventManager->AddObserver(button1, MouseClickEvent);
 		return 1;
 	}
 	//逻辑循环

@@ -5,10 +5,10 @@
 namespace GameEngine
 {
 	//ÊÂ¼şÀà
-	EventManager::EventManager(DXInput* dxInput)
+	EventManager::EventManager(DX9Device* dx9Device)
 	{
 		timer = Timer<EventManager>(10);
-		EventManager::dxInput = dxInput;
+		EventManager::dx9Device = dx9Device;
 	}
 	int EventManager::AddTimer(Timer<Game>* timer)
 	{

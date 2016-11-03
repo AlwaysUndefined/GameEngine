@@ -1,10 +1,10 @@
 #pragma once
 #include <BasicStructure.h>
 #include <DX9Device.h>
-#include <DXInput.h>
 #include <Scene.h>
 #include <GUI.h>
 #include <GameObject.h>
+#include <Texture2D.h>
 namespace GameEngine
 {
 	enum GameStatus
@@ -36,19 +36,18 @@ namespace GameEngine
 		GameStatus status = Game_Begin;
 
 		//设备对象
-		EventManager* eventManager;
-		DX9Device* dx9Device;//对象管理器
-		LPDIRECT3DDEVICE9 dxDevice = NULL;//dx对象
-		DXInput* dxInput;
-		LPD3DXSPRITE dxSprite = NULL;
-		ID3DXFont* dxFont = NULL;
+		EventManager* eventManager=NULL;
+		DX9Device* dx9Device=NULL;
 
 		Scene* scene;//场景管理类
 		GUI* Gui;//GUI管理类
 
-		Game(HWND hwnd, HINSTANCE hInstance, DX9Device* dx9Device, DXInput* dxInput, EventManager* eventManager);
+		//渲染贴图列表
+		list<Texture2D*> RenderList;
+
+		Game(DX9Device* dx9Device, EventManager* eventManager);
 		//窗体绘制前调用初始化函数。加载资源
-		int Init(Game* mySelf);
+		int Init(Game* me);
 		//窗体绘制完成后第一个调用的函数，初始化逻辑
 		int Start();
 		int InitGUI();

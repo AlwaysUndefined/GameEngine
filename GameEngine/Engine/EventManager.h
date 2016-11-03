@@ -11,7 +11,7 @@ namespace GameEngine
 	{
 	public:
 		//输入设备
-		DXInput* dxInput;
+		DX9Device* dx9Device = NULL;
 		//调度事件管理器速率
 		Timer<EventManager> timer;
 		//定时器事件观察者组
@@ -20,7 +20,7 @@ namespace GameEngine
 		//鼠标点击事件观察者组
 		list<Observer<Game>*> mouseClick_Scene_Group;
 		list<Observer<Game>*>::iterator iter_mouseClick;
-		EventManager(DXInput* dxInput);
+		EventManager(DX9Device* dx9Device);
 		int AddTimer(Timer<Game>* timer);
 		int AddObserver(Observer<Game>* ob, EventType et);
 		void EventLoop();

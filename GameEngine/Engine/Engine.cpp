@@ -14,9 +14,9 @@ namespace GameEngine
 		dx9Device = new DX9Device(hwnd,hInstance,clientSize);
 		dx9Device->DX9Init();
 			
-		eventManager = new EventManager();
+		eventManager = new EventManager(dx9Device);
 			
-		game = new Game(hwnd,hInstance,dx9Device,eventManager);
+		game = new Game(dx9Device,eventManager);
 		game->Init(game);
 		game->InitGUI();
 		////Джх╬╤╗й╠фВ
